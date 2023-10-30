@@ -1,9 +1,9 @@
-from operations import Multiplicacion
+from operations import division
 def game():
   score = 0
   while True:
     print('======== Menu =========='
-          '\n1. multiplicacion'
+          '\n1. division'
           '\n0. Exit')
     option = int(input('\nChoice an option: '))
     if option == 0:
@@ -12,7 +12,7 @@ def game():
     num_2 = input('Enter second number: ')
     answer = int(input('Enter you answer: '))
     if option == 1:
-      result = Multiplicacion(num_1, num_2)
+      result = division(num_1, num_2)
       if result == answer:
         score += 1
         print('Correct!!')
