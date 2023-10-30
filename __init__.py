@@ -1,6 +1,6 @@
 from operations import modulo_divide
 def game():
-  score = 0
+  score = 1
   while True:
     print('======== Menu =========='
           '\n1. modulo'
