@@ -1,9 +1,9 @@
-from operations import potencia
+from operations import modulo_divide
 def game():
   score = 0
   while True:
     print('======== Menu =========='
-          '\n1. potencia'
+          '\n1. modulo'
           '\n0. Exit')
     option = int(input('\nChoice an option: '))
     if option == 0:
@@ -12,9 +12,9 @@ def game():
     num_2 = input('Enter second number: ')
     answer = int(input('Enter you answer: '))
     if option == 1:
-      result = potencia(num_1, num_2)
+      result = modulo_divide(num_1, num_2)
       if result == answer:
-        score += 2
+        score += 4
         print('Correct!!')
       else:
         print('Incorrect')
